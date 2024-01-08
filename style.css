@@ -24,7 +24,7 @@
 
 html {
 font-size:62.5%;
-overflow-x: hidden;
+overflow-x: hidden !important;
 width:fit-content;
 background: red;
 }
@@ -38,7 +38,7 @@ body{
  position: fixed;
  top: 0;
  left: 0;
- width: 100%;
+ width: 100vw;
  padding: 2rem 7%;
  background: transparent;
  display: flex;
@@ -204,6 +204,14 @@ color: var(--white-color);
     align-items: center;
     animation: professionRotate 13s ease-out infinite;
     /* make a lager outer circle and make the web dev and all inside the larger circle */
+}
+
+@keyframes professionRotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }
 
 .home .profession-box .profession{
